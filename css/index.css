@@ -45,7 +45,7 @@ a {
 .navbar .inner .logo a {
     /* 폰트 굵기, 크기/줄간격,글꼴 */
     font-size: 24px/1 "arial";
-    color: #444;
+    color: #0ac542;
     position: relative;
     top: 30px;
 
@@ -65,8 +65,9 @@ a {
     margin-left: 20px;
 }
 .navbar .inner .menubar li a {
-    font: 17px/1 "arial";
-    color: #999;
+    font: 20px "arial";
+    font-weight: bold   ;
+    color: rgb(7, 219, 7);
     padding: 0px 10px;
     
 }
@@ -102,3 +103,38 @@ a {
     height: auto;    /*세로는 비율에 따라 자동*/
     border-radius: 10px; /* 선택: 이미지 모서리 둥글게 */
 }
+
+.myself {
+    float: right;
+    font-size: 20px;
+    color: #333;        
+    padding: 20px;
+    line-height: 1.5; /* 줄 간격 조정 */
+    background-color: whitesmoke; /* 배경색 반투명 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    width: 70%; /* 너비 조정 */
+    margin-right: 60px; /* 오른쪽 여백 */
+    height: 100%;
+
+}
+
+.git {
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px 0px;
+    font-size: 20px;
+    margin-left: 850px;
+
+}   
+.notion{
+    width: 100%;
+    font-size: 20px;
+    margin-left: 850px;
+}
+
+.links img{
+    width: 20px !important;
+    height: 20px !important;
+}
+
