@@ -5,6 +5,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    background-image: url('../img/sky.jpeg');
+    background-size: cover; /* 배경 이미지가 화면을 채우도록 설정 */
+    background-position: center; /* 배경 이미지가 중앙에 위치하도록 설정 */     
+}
 /* 블릿제거 */
 ul {
     list-style: none;
@@ -18,6 +23,12 @@ a {
     /* 헤더의 밑에 줄을 긋는다 */
     border-bottom: 1px solid #ddd;
 }
+/* .navbar .inner .container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 20px;
+} */
 .navbar .inner {
     width: 1180px;
     height: 120px;
@@ -35,12 +46,19 @@ a {
     /* 폰트 굵기, 크기/줄간격,글꼴 */
     font-size: 24px/1 "arial";
     color: #444;
+    position: relative;
+    top: 30px;
+
 }
 .navbar .inner .menubar {
     /* 오른쪽 끝으로 감 */
-    top: 30px;
+    top: 100px;
     right: 30px;
-    position: absolute;
+    left: 10px;
+    /* position: absolute; */
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 .navbar .inner .menubar li {
     float: left;
@@ -68,18 +86,19 @@ a {
 .container .content {
     width: 100%;
     height: 500px;
-    background-color: #f5f5f5;
+    background-color: whitesmoke; /* 이미지 들어 있는 배경  */
     border: 1px solid #ddd;
+    box-shadow: black 0px 0px 10px;
     padding: 20px;
+    
 }   
 .container .content .image{
-    position: absolute;
+
     top: 30%;
-    left: 5%; 
-    
+    left: 5%; ;
 }
 .container .content .image img {
     width: 200px;    /* 원하는 너비로 조정 */
-    height: auto;    /* 세로는 비율에 따라 자동 */
+    height: auto;    /*세로는 비율에 따라 자동*/
     border-radius: 10px; /* 선택: 이미지 모서리 둥글게 */
 }
